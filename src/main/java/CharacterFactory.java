@@ -11,7 +11,7 @@ import org.reflections.Reflections;
 
 public class CharacterFactory {
     private static final Random random = new Random();
-    public lotr.Character createCharacter(){
+    public static lotr.Character createCharacter(){
         Reflections reflections = new Reflections("lotr");
         ArrayList<Class<? extends Character>> charClasses = new ArrayList<>(reflections.getSubTypesOf(Character.class));
         charClasses.removeIf(c -> !Modifier.isFinal(c.getModifiers()));

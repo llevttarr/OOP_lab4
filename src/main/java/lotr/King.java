@@ -1,7 +1,7 @@
 package lotr;
 
 public class King extends Noble {
-    public King(int minHp, int maxHp,int minPower, int maxPower){
+    public King(){
         super(
                 5,15,
                 5,15
